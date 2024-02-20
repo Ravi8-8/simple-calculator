@@ -1,0 +1,46 @@
+body {
+    background-color: #2d2c35; /* Light gray background */
+    margin: 0; /* Remove default body margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set height to viewport height */
+}
+
+.grid-container {
+    background-color: #9e99ef; /* White background for calculator container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 20px; /* Padding inside container */
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+.calculator-grid button {
+    font-size: 1.5em; /* Larger font size */
+    background-color: #dc4343; /* Light gray background */
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Padding around buttons */
+}
+
+textarea {
+    grid-column: span 4; /* Make textarea span across 4 columns */
+    font-size: 1.5em; /* Larger font size */
+    text-align: right; /* Text alignment to right */
+    padding: 10px; /* Padding inside textarea */
+    margin-bottom: 10px; /* Add space between textarea and buttons */
+}
+
+button:hover {
+    background-color: #98ff60; /* Darker gray on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Add slight downward shift on click */
+}
